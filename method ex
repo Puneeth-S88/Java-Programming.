@@ -1,0 +1,49 @@
+public class MethodsExample {
+
+    // 1. Method with no parameters and no return value
+    public static void greet() {
+        System.out.println("Hello, welcome!");
+    }
+
+    // 2. Method with parameters and no return value
+    public static void add(int a, int b) {
+        int sum = a + b;
+        System.out.println("Sum = " + sum);
+    }
+
+    // 3. Method with no parameters but return value
+    public static int getNumber() {
+        return 100;
+    }
+
+    // 4. Method with parameters and return value
+    public static int multiply(int a, int b) {
+        return a * b;
+    }
+
+    // 5. Method with String parameter
+    public static void displayName(String name) {
+        System.out.println("Name: " + name);
+    }
+
+    // Main method
+    public static void main(String[] args) {
+
+        // Calling method 1
+        greet();
+
+        // Calling method 2
+        add(10, 20);
+
+        // Calling method 3
+        int num = getNumber();
+        System.out.println("Number = " + num);
+
+        // Calling method 4
+        int result = multiply(5, 4);
+        System.out.println("Multiplication = " + result);
+
+        // Calling method 5
+        displayName("Puneeth");
+    }
+}
